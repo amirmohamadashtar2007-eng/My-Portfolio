@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با من | MyPortfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#abc4ff] min-h-screen flex flex-col text-gray-800">
+    <!-- هدر -->
+    <header class="bg-white shadow-md">
+      <nav
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <span class="text-xl font-bold text-purple-700">MyPortfolio</span>
+
+        <ul class="flex gap-6 text-gray-700 font-medium">
+          <li><a href="index.html" class="hover:text-purple-600">خانه</a></li>
+          <li>
+            <a href="about.html" class="hover:text-purple-600">درباره من</a>
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-purple-600">پروژه‌ها</a>
+          </li>
+          <li>
+            <a href="contant.html" class="text-purple-700 font-semibold"
+              >تماس</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- محتوا -->
+    <main class="flex-grow">
+      <section
+        class="max-w-6xl mx-auto px-6 py-24 bg-gradient-to-b from-white/90 to-white rounded-3xl mt-12 shadow-2xl"
+      >
+        <h1 class="text-4xl font-bold text-center mb-12 text-purple-700">
+          تماس با من
+        </h1>
+
+        <div class="flex flex-col md:flex-row gap-12">
+          <!-- فرم تماس -->
+          <form
+            action="https://formspree.io/f/mvzgbywq"
+            method="POST"
+            class="flex-1 bg-white p-8 rounded-2xl shadow-xl space-y-6"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="نام شما"
+              required
+              class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500 outline-none"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="ایمیل شما"
+              required
+              class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500 outline-none"
+            />
+
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="پیام شما"
+              required
+              class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500 outline-none"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full bg-purple-700 text-white py-4 rounded-xl hover:bg-purple-800 transition font-semibold text-lg"
+            >
+              ارسال پیام
+            </button>
+          </form>
+
+          <!-- اطلاعات تماس -->
+          <div
+            class="flex-1 bg-purple-700 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-center gap-6"
+          >
+            <h2 class="text-2xl font-bold mb-4">راه‌های ارتباطی</h2>
+
+            <p>
+              📧 <span class="font-semibold">ایمیل:</span>
+              amir.ashtar.885@gmail.com
+            </p>
+            <p>
+              📞 <span class="font-semibold">تلفن:</span>
+              2904-476-0914
+            </p>
+            <p>
+              📍 <span class="font-semibold">آدرس:</span>
+              اردبیل، ایران
+            </p>
+
+            <div class="flex gap-4 mt-6 text-white font-medium">
+              <a href="#" class="hover:underline">GitHub</a>
+              <a href="#" class="hover:underline">LinkedIn</a>
+              <a href="#" class="hover:underline">Telegram</a>
+              <a href="#" class="hover:underline">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer class="bg-white mt-12 shadow-inner">
+      <div class="max-w-6xl mx-auto px-6 py-6 text-center text-gray-500">
+        © 2026 MyPortfolio — تمامی حقوق محفوظ است
+      </div>
+    </footer>
+  </body>
+</html>

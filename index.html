@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 font-sans">
+
+  <!-- هدر -->
+  <header class="bg-white shadow-sm fixed w-full z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-2xl font-bold text-blue-600">MyPortfolio</span>
+      <ul class="flex gap-6 text-gray-700">
+        <li><a href="index.html" class="hover:text-blue-600 transition">خانه</a></li>
+        <li><a href="blog.html" class="hover:text-blue-600 transition">درباره من</a></li>
+        <li><a href="projects.html" class="hover:text-blue-600 transition">پروژه ها</a></li>
+        <li><a href="contant.html" class="hover:text-blue-600 transition">تماس</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white min-h-screen flex items-center justify-center">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fadeIn">سلام، من یک برنامه نویس وب هستم</h1>
+      <p class="text-lg md:text-2xl mb-6 animate-fadeIn delay-200">
+        عاشق ساختن وب‌سایت‌های مدرن، سریع و ریسپانسیو با <span class="font-semibold">JavaScript</span> و <span class="font-semibold">Tailwind</span> هستم.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="projects.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transform transition">مشاهده پروژه‌ها</a>
+        <a href="contact.html" class="bg-transparent border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">تماس با من</a>
+      </div>
+    </div>
+    <!-- شکل‌های تزئینی با Tailwind -->
+    <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-100"></div>
+  </section>
+
+  <!-- مهارت‌ها (Skills) -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">مهارت‌های من</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition transform hover:-translate-y-2">
+        <h3 class="text-xl font-semibold mb-2">HTML</h3>
+        <p class="text-gray-600">ساختار استاندارد و تمیز</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition transform hover:-translate-y-2">
+        <h3 class="text-xl font-semibold mb-2">CSS</h3>
+        <p class="text-gray-600">طراحی ریسپانسیو و مدرن</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition transform hover:-translate-y-2">
+        <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+        <p class="text-gray-600">منطق و تعامل با کاربر</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition transform hover:-translate-y-2">
+        <h3 class="text-xl font-semibold mb-2">Tailwind</h3>
+        <p class="text-gray-600">استایل سریع و حرفه‌ای</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- پروژه‌های کوچک -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10">پروژه‌های منتخب</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- پروژه نمونه -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="img/Screenshot (18).png" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold mb-2">وبسایت فروشگاهی</h3>
+          <p class="text-gray-600 mb-4">HTML, CSS, JS</p>
+          <a href="projects.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">مشاهده پروژه</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="img/Screenshot (16).png" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold mb-2">اپلیکیشن مدیریت کارها</h3>
+          <p class="text-gray-600 mb-4">HTML, CSS, JS</p>
+          <a href="projects.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">مشاهده پروژه</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+        <img src="img/Screenshot (17).png" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold mb-2">ماشین حساب پیشرفته</h3>
+          <p class="text-gray-600 mb-4">HTML, CSS, JS</p>
+          <a href="projects.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">مشاهده پروژه</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

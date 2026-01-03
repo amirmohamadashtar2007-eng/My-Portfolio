@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره من - MyPortfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#abc4ff] font-sans">
+    <!-- هدر مشترک -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+      <nav
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <span class="text-2xl font-bold text-blue-600">MyPortfolio</span>
+        <ul class="flex gap-6 text-gray-700">
+          <li>
+            <a href="index.html" class="hover:text-blue-600 transition">خانه</a>
+          </li>
+          <li>
+            <a href="blog.html" class="text-blue-600 font-semibold transition"
+              >درباره من</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-blue-600 transition"
+              >پروژه ها</a
+            >
+          </li>
+          <li>
+            <a href="contant.html" class="hover:text-blue-600 transition"
+              >تماس</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-32 max-w-7xl mx-auto px-6">
+      <!-- معرفی کوتاه -->
+      <section class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          سلام، من یک برنامه نویس وب هستم
+        </h1>
+        <p class="text-gray-600 md:text-lg">
+          با عشق به کدنویسی و طراحی وب‌سایت‌های مدرن، همیشه به دنبال یادگیری
+          تکنولوژی‌های جدید و ساخت پروژه‌های حرفه‌ای هستم.
+        </p>
+      </section>
+
+      <!-- تصویر + متن درباره من -->
+      <section class="flex flex-col md:flex-row items-center gap-10 mb-16">
+        <img
+          src="img/photo_2025-12-19_14-24-17.jpg"
+          alt="Profile"
+          class="w-64 h-64 rounded-full shadow-lg object-cover mx-auto md:mx-0"
+        />
+        <div class="md:flex-1 text-center md:text-right">
+          <h2 class="text-3xl font-bold mb-4">درباره من</h2>
+          <p class="text-gray-700 mb-4">
+            من از سال 1400 وارد دنیای برنامه نویسی وب شدم و با HTML, CSS,
+            JavaScript و Tailwind تجربه زیادی در طراحی وبسایت‌های ریسپانسیو و
+            تعاملی دارم.
+          </p>
+          <p class="text-gray-700 mb-4">
+            تمرکزم روی تجربه کاربری (UX)، رابط کاربری (UI) و کدنویسی تمیز است تا
+            پروژه‌های حرفه‌ای و سریع تحویل بدم.
+          </p>
+          <a
+            href="contact.html"
+            class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+            >تماس با من</a
+          >
+        </div>
+      </section>
+
+      <!-- مهارت‌ها با پیشرفتگر (Progress Bar) -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-10">مهارت‌های من</h2>
+        <div class="max-w-2xl mx-auto space-y-6">
+          <div>
+            <h3 class="font-semibold mb-1">HTML</h3>
+            <div class="bg-gray-300 h-4 rounded-full">
+              <div
+                class="bg-blue-600 h-4 rounded-full w-[90%] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">CSS</h3>
+            <div class="bg-gray-300 h-4 rounded-full">
+              <div
+                class="bg-blue-600 h-4 rounded-full w-[85%] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">JavaScript</h3>
+            <div class="bg-gray-300 h-4 rounded-full">
+              <div
+                class="bg-blue-600 h-4 rounded-full w-[80%] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">Tailwind CSS</h3>
+            <div class="bg-gray-300 h-4 rounded-full">
+              <div
+                class="bg-blue-600 h-4 rounded-full w-[75%] transition-all duration-1000"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- تجربه کاری یا تحصیلات -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-10">تجربه و تحصیلات</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2"
+          >
+            <h3 class="text-xl font-semibold mb-2">کار با پروژه‌های واقعی</h3>
+            <p class="text-gray-700">
+              تجربه کار روی پروژه‌های شخصی و تیمی با استفاده از HTML, CSS, JS و
+              Tailwind.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2"
+          >
+            <h3 class="text-xl font-semibold mb-2">تحصیلات</h3>
+            <p class="text-gray-700">
+              فارغ‌التحصیل رشته مهندسی نرم‌افزار با تمرکز روی توسعه وب.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

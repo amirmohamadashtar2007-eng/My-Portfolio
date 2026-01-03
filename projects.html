@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>پروژه‌ها - MyPortfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#abc4ff] font-sans">
+
+  <!-- هدر مشترک -->
+  <header class="bg-white shadow-sm fixed w-full z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <span class="text-2xl font-bold text-blue-600">MyPortfolio</span>
+      <ul class="flex gap-6 text-gray-700">
+        <li><a href="index.html" class="hover:text-blue-600 transition">خانه</a></li>
+        <li><a href="blog.html" class="hover:text-blue-600 transition">درباره من</a></li>
+        <li><a href="projects.html" class="text-blue-600 font-semibold transition">پروژه ها</a></li>
+        <li><a href="contant.html" class="hover:text-blue-600 transition">تماس</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-32 max-w-7xl mx-auto px-6">
+
+    <!-- معرفی صفحه پروژه‌ها -->
+   <section class="max-w-6xl mx-auto px-4 py-16 bg-slate-50 rounded-xl shadow-lg">
+  <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">پروژه های من</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <!-- پروژه 1 -->
+    <div class="project-card bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl">
+      <div class="relative overflow-hidden">
+        <img src="img/Screenshot (18).png" alt="Project 1" class="w-full h-52 object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white font-bold text-lg">مشاهده پروژه</span>
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">وبسایت فروشگاهی</h3>
+        <p class="text-gray-600 mb-4">HTML, CSS, JS</p>
+        <button class="view-btn bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">جزئیات</button>
+      </div>
+    </div>
+
+    <!-- پروژه 2 -->
+    <div class="project-card bg-gradient-to-br from-white to-green-50 rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl">
+      <div class="relative overflow-hidden">
+        <img src="img/Screenshot (16).png" alt="Project 2" class="w-full h-52 object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white font-bold text-lg">مشاهده پروژه</span>
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">اپلیکیشن مدیریت کارها</h3>
+        <p class="text-gray-600 mb-4">HTML, CSS, JS</p>
+        <button class="view-btn bg-green-600 text-white px-5 py-2 rounded-full hover:bg-green-700 transition">جزئیات</button>
+      </div>
+    </div>
+
+    <!-- پروژه 3 -->
+    <div class="project-card bg-gradient-to-br from-white to-purple-50 rounded-2xl shadow-2xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl">
+      <div class="relative overflow-hidden">
+        <img src="img/Screenshot (17).png" alt="Project 3" class="w-full h-52 object-cover transition-transform duration-500 hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="text-white font-bold text-lg">مشاهده پروژه</span>
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-semibold mb-2">ماشین حساب پیشرفته</h3>
+        <p class="text-gray-600 mb-4">HTML, CSS, JS</p>
+        <button class="view-btn bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition">جزئیات</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Modal برای نمایش جزئیات پروژه -->
+  <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded-lg max-w-md w-full">
+      <h2 id="modalTitle" class="text-xl font-bold mb-4"></h2>
+      <p id="modalDescription" class="text-gray-700 mb-4"></p>
+      <button id="closeModal" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">بستن</button>
+    </div>
+  </div>
+
+  <script>
+ // modal برای جزئیات پروژه
+    const viewButtons = document.querySelectorAll('.view-btn');
+    const modal = document.getElementById('projectModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeModal = document.getElementById('closeModal');
+
+    const projectDetails = [
+      {title: "وبسایت فروشگاهی", description: "یک وبسایت فروشگاهی با سبد خرید و طراحی ریسپانسیو."},
+      {title: "اپلیکیشن مدیریت کارها", description: "یک اپلیکیشن مدیریت وظایف با JavaScript و Tailwind."},
+      {title: "ماشین حساب پیشرفته", description: "ماشین حساب پیشرفته با جمع، تفریق، ضرب، تقسیم و درصد."}
+    ];
+
+    viewButtons.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        modalTitle.textContent = projectDetails[index].title;
+        modalDescription.textContent = projectDetails[index].description;
+        modal.classList.remove('hidden');
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
